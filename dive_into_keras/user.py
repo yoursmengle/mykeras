@@ -9,9 +9,7 @@ import cPickle
 import theano
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
-from data import load_data
 import random
-from userdata import load_userdata
 import sys
 import os
 from PIL import Image
