@@ -11,9 +11,9 @@ from PIL import Image
 import numpy as np
 
 def load_a_image(image_name):
-    data = np.empty((1,1,28,28),dtype="float")
+	data = np.empty((1,1,28,28),dtype="float32")
     img = Image.open(image_name)
-    arr = np.asarray(img, dtype= "float")
+    arr = np.asarray(img, dtype= "float32")
     data[0,:,:,:] = arr
     return data
 
